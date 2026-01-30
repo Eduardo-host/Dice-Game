@@ -1,0 +1,91 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dice.winner {
+  position: relative;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(78, 204, 163, 0.6);
+  border-radius: 15px;
+}
+
+.dice.winner::after {
+  content: "🚩";
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  font-size: 2.5rem;
+  animation: wave 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes wave {
+  from { transform: rotate(-15deg); }
+  to { transform: rotate(15deg); }
+}
+
+body {
+  background-color: #393E46;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #4ECCA3;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+.btn{
+  margin-top: 50px;
+  width: 80%;
+  padding: 20px 100px;
+  background: linear-gradient(135deg, #4ECCA3 0%, #3ba888 100%);
+  font-size: 2.5rem;
+  color: #232931;
+  border: none;
+  border-radius: 15px;
+  font-family: 'Lobster', cursive;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(78, 204, 163, 0.3);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.btn:hover{
+  background: linear-gradient(135deg, #5fddb8 0%, #4ECCA3 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(78, 204, 163, 0.5);
+  color: #232931;
+}
+.btn:active{
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(78, 204, 163, 0.4);
+}
+
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
