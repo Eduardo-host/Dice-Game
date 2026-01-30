@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Refresh Me</h1>
+
+      <p>
+  P1: <span id="scoreP1">0</span> |
+  P2: <span id="scoreP2">0</span> | 
+  Empates: <span id="scoreDraw">0</span>
+</p>
+
+
+      <div class="dice" id="dice1">
+        <p class="player1">Player 1</p>
+        <img class="img1" src="./images/dice6.png" alt="Dice 1" />
+      </div>
+
+      <div class="dice" id="dice2">
+        <p class="player2">Player 2</p>
+        <img class="img2" src="./images/dice6.png" alt="Dice 2" />
+      </div>
+
+      <button class="btn"  onclick="darleClick()">Roll dice</button>
+    </div>
+
+    <footer> 🎲 App.Dice.Eduardo 🎲 </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
