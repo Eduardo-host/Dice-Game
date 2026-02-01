@@ -11,3 +11,7 @@ Simple dice game built with JavaScript.
 - DOM manipulation
 - Git & GitHub workflow
 - Branches and merge (feature/ui & feature-game-logic)
+
+
+## 🚀 Live Demo
+https://eduardo-host.github.io/Dice-Game/
